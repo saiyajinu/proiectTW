@@ -5,14 +5,6 @@
 div{
     margin-bottom: 25px;
 }
-header{
-    overflow:auto;
-    padding: 20px;
-    text-align: center;
-    background: #ffffff;
-    color: black;
-    font-size: 15px;
-}   
 body{
     background: #adadad;
     font-family: "Lato", sans-serif;
@@ -30,10 +22,11 @@ p{
 }
 #titlu{
     font-family: 'VALORANT', sans-serif;                                              
-    margin-top: 30px;
+    margin-top: 140px;
     font-weight: bold;
     text-align: center;
     font-size: 50px;
+    scroll-margin-top: 120px;
 }
 
 #divimg2{
@@ -63,8 +56,14 @@ p{
 }
 
 .header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
     overflow: hidden;
     padding: 20px 10px;
+    padding-bottom: 0;
     background: black;
     color: white;
     font-size: 15px;
@@ -85,10 +84,6 @@ p{
     width: 150px;
 }
 
-.header a.active {
-    color: white;
-}
-
 .header-right a:hover {
     background-color: #ff4655;
     color: white;
@@ -96,6 +91,7 @@ p{
 
 .header-right {
     float: right;
+    margin-right: 15px;
 }
 
 @media screen and (max-width: 500px) {
@@ -111,7 +107,7 @@ p{
 }
 
 .divimag1{
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: #ff4655;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -130,11 +126,7 @@ p{
     font-weight: bold;
     text-align: center;
     font-size: 30px;
-}
-
-.subsubtitlu{
-    text-align: center;
-    font-size: 24px;
+    scroll-margin-top: 120px;
 }
 
 #divimg2{
@@ -162,14 +154,30 @@ footer{
 }
 
 .divimg3{
+    display: flex;
     background-color: #ff4655;
     padding-top: 20px;
+    text-align: center;
 }
-.divimg3 img{
+
+.divimg3 span{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 20px;
+}
+
+.divimg3 img{
+
     width:150px;
+    transition: width 2s;
+}
+
+.gridA{
+    flex: 25%;
+}
+
+
+.divimg3 img:hover{
+    width: 200px;
 }
 
 .divimg3 p{
@@ -186,6 +194,39 @@ footer{
     width: 630px;
 }
 
+.divimg4{
+    padding-top: 20px;
+    background-color: #ff4655;  
+}
+
+.divimg4:hover{
+    animation: rgb 15s forwards;
+}
+
+@keyframes rgb {
+    0% {
+        background-color: #ff4655;
+      }
+    17% {
+        background-color: orange;
+      }
+    34% {
+        background-color: yellow;
+      }
+    51% {
+        background-color: greenyellow;
+      }
+    69% {
+        background-color: lightblue;
+      }
+    89% {
+        background-color: blue;
+      }
+    100% {
+        background-color: indigo;
+      }
+}
+
 .divimg4 p{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -195,19 +236,19 @@ footer{
 
 .divimg5{
     float: right;
-    width: 250px;
-    margin-right: 8%;
+    width: 325px;
+    margin-right: 6%;
     margin-left: 6%;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 #img5{
-    width: 275px;
+    width: 325px;
 }
 
 .divimgright{
     margin-top: 40px;
-    background-color: #ff4655;
     padding-top: 30px;
     padding-bottom: 30px;
 }

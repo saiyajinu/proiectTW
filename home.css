@@ -1,0 +1,232 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+div{
+    margin-bottom: 25px;
+}
+header{
+    overflow:auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    color: black;
+    font-size: 15px;
+}   
+body{
+    background: #adadad;
+    font-family: "Lato", sans-serif;
+}
+#footer{
+    margin-top: 150px;
+    text-align: right;
+    padding: 20px;
+    padding-right: 40px;
+    color: #ff4655;
+    background-color: black;
+}
+p{
+    margin: 0;
+}
+#titlu{
+    font-family: 'VALORANT', sans-serif;                                              
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+
+#divimg2{
+    width:300px;
+    text-align:center;
+    display:block;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    float:left;
+    flex: 1;
+}
+
+#imag2{
+    width: 320px;
+}
+
+#par1{
+    margin-top: 30px;
+    display: inline-flex;
+}
+#par2{
+    margin-top: 50px;
+    display: inline-flex;
+}
+.main {
+    height: 100%;
+}
+
+.header {
+    overflow: hidden;
+    padding: 20px 10px;
+    background: black;
+    color: white;
+    font-size: 15px;
+}
+
+.header a {
+    float: left;
+    color: #ff4655;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.imghead {
+    width: 150px;
+}
+
+.header a.active {
+    color: white;
+}
+
+.header-right a:hover {
+    background-color: #ff4655;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .header-right {
+        float: none;
+    }
+}
+
+.divimag1{
+    margin-top: 30px;
+    background-color: #ff4655;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.imag1{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitlu{
+    font-family: 'VALORANT', sans-serif; 
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.subsubtitlu{
+    text-align: center;
+    font-size: 24px;
+}
+
+#divimg2{
+    margin-left: 6%;
+}
+
+.paragrafdreapta{
+    text-indent: 9%;
+    font-size: 20px;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: #f1f1f1;
+}
+
+.textimagistica{
+    font-size: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    color: #000000;
+}
+
+.divimg3{
+    background-color: #ff4655;
+    padding-top: 20px;
+}
+.divimg3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:150px;
+}
+
+.divimg3 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.img4{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 630px;
+}
+
+.divimg4 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.divimg5{
+    float: right;
+    width: 250px;
+    margin-right: 8%;
+    margin-left: 6%;
+    margin-bottom: 15px;
+}
+
+#img5{
+    width: 275px;
+}
+
+.divimgright{
+    margin-top: 40px;
+    background-color: #ff4655;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.divimg5 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.textimagradio{
+    font-size: 20px;
+    color: black;
+    margin-left: 5%;
+}
+
+.textimagradio ul li{
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

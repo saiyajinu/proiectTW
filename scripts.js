@@ -1,6 +1,8 @@
 window.onload = () => {
     changeEsportsPicText();
     welcome();
+    addEasterEgg();
+    visibilityGif();
 }
 
 function changeEsportsPicText(){
@@ -89,6 +91,13 @@ function welcome(){
 
 function rgbFooter(){
     const footer = document.getElementById('footer');
+    if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(255, 0, 0)')
+        footer.style.color = 'green';
+    else if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(0, 128, 0)')
+        footer.style.color = 'blue';
+    else if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(0, 0, 255)')
+        footer.style.color = 'red';
+
     const interval = setInterval(() => {
         if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(255, 0, 0)')
         footer.style.color = 'green';
@@ -101,4 +110,54 @@ function rgbFooter(){
     setTimeout(() => {
         clearInterval(interval);
     }, 5000);
-}   
+}  
+
+const tenz = ['t','e','n','z'];
+
+function addEasterEgg(){
+    document.addEventListener('keydown', easterEgg1);
+
+    function easterEgg1(e){
+        let usage = 0;
+        if(e.key == 't'){
+            console.log(e.key);
+            document.addEventListener('keydown', easterEgg2);
+            function easterEgg2(e){
+                if(e.key == 'e'){
+                    console.log(e.key);
+                    document.addEventListener('keydown', easterEgg3);
+                    function easterEgg3(e){
+                        if(e.key == 'n'){
+                            console.log(e.key);   
+                            document.addEventListener('keydown', easterEgg4);
+                            function easterEgg4(e){
+                                if(e.key == 'z' && usage == 0){
+                                    console.log(e.key);
+                                    confirm('TENZEDZOMBIETENZEDZOMBIETENZEDZOMBIETENZEDZOMBIE');
+                                    usage = 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }              
+    }
+}
+
+function visibilityGif(){
+    const gif = document.getElementById('par1');
+    function turnVisibility(e){
+
+        e.target.style.visibility = 'hidden';
+
+        setTimeout(() => {
+            e.target.style.visibility = 'visible';
+        }, 2000);
+       
+        console.log(e.currentTarget);
+    }
+    gif.addEventListener('click', turnVisibility);    
+}
+
+

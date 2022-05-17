@@ -30,7 +30,7 @@ p{
 }
 
 #divimg2{
-    width:300px;
+    width:32vw;
     text-align:center;
     display:block;
     margin-right: 10px;
@@ -40,7 +40,7 @@ p{
 }
 
 #imag2{
-    width: 320px;
+    width: 30vw;
 }
 
 #par1{
@@ -270,4 +270,8 @@ footer{
     margin-left: 5%;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.coloredbackground{
+    background-color: #ff4655;
 }

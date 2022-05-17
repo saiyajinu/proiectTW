@@ -27,15 +27,14 @@
 
             <div id="titlu">vAlArantepedia</div>
 
-            <div class="divimag1" id="radiologie"><img src="imagine1.jpg" class="imag1"></div>
-
-            <div class="subtitlu" id="whatval">What is VALORANT?</div>
+            <div class="divimag1 coloredbackground" id="radiologie"><img src="imagine1.jpg" class="imag1"></div>
 
             <div id="par1">
                 <div id="divimg2">
                     <img src="imagine2.gif" id="imag2">
                 </div>
                 <div>
+                    <div class="subtitlu" id="whatval">What is VALORANT?</div>
                     <p class="paragrafdreapta">Valorant (stylized as VALORANT) is a free-to-play first-person hero
                         shooter developed and published by Riot Games, for Microsoft Windows. First teased under the
                         codename Project A in October 2019, the game began a closed beta period with limited access on
@@ -58,7 +57,7 @@
                 that awards money based on the outcome of the previous round, any kills the player is responsible for,
                 and any objectives completed.</div>
 
-            <div class="divimg3">
+            <div class="divimg3 coloredbackground" onclick="changeBackground()">
                 <div class="gridA"><img src="imagine3.jpg"><span>Neon</span></div>
                 <div class="gridA"><img src="imagine3-1.jpg"><span>Yoru</span></div>
                 <div class="gridA"><img src="imagine3-2.png"><span>Raze</span></div>
@@ -107,6 +106,15 @@
                         (North America, EMEA, South America, Asia Pacific).</p>
                 </div>
             </div>
+
+                <form>
+                    <label for="fname">Who do you think is the best VALORANT player?</label><br>
+                    <input type="text" placeholder="Player name" id="pname" name="pname" onblur="getVal()"><br>
+                </form>
+            <div>
+                <span id="cap">HM?</span>
+            </div>
+                
 
             <div id="footer">
                 <p>&copy Sefcic Adrian-Ionut</p>

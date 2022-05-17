@@ -19,3 +19,29 @@ function changeEsportsPicText(){
         }
     }
 }
+
+function getVal() {
+    const val = document.querySelector('input').value;
+    const pcap = document.getElementById('cap');
+    if (val == 'SAi' || val == 'iulliiia' || val == 'sai' || val == 'relu'){
+        pcap.textContent = 'NO CAP ❌🧢';
+        pcap.style.backgroundColor = 'green';
+    }
+    else if(val == ''){
+        pcap.textContent = 'HM?';
+        pcap.style.backgroundColor = 'gray';
+    }
+    else{
+        pcap.textContent = 'U CAPPIN🧢';
+        pcap.style.backgroundColor = 'red';
+    }  
+}
+
+function changeBackground(){
+    const elements = document.getElementsByClassName('coloredbackground');
+    for(let element of elements){
+        if( element.style.backgroundColor != 'blue')
+            element.style.backgroundColor = 'blue';
+        else element.style.backgroundColor = '#ff4655'
+    }
+}

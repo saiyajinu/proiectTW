@@ -14,8 +14,11 @@ body{
     text-align: right;
     padding: 20px;
     padding-right: 40px;
-    color: #ff4655;
+    color: red;
     background-color: black;
+}
+#footer p{
+    cursor: pointer;
 }
 p{
     margin: 0;
@@ -296,4 +299,44 @@ input{
     background-color: gray;
     margin-left: auto;
     margin-right: auto;
+}
+
+#pickdiv{
+    text-align: center;
+}
+
+#pickdiv button{
+    margin-top: 50px;
+    background-color: #ff4655; 
+    border: 1px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#pickdiv button:hover{
+    background-color: #f36c77;
+}
+
+#pickdiv div{
+    margin-top: 10px;
+}
+
+#pickdiv img{
+    margin-top: 5px;
+    width: 8%;
+}
+
+#pickdiv p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+#todelete{
+    font-size: larger;
 }

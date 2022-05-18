@@ -161,6 +161,7 @@ footer{
     background-color: #ff4655;
     padding-top: 20px;
     text-align: center;
+    font-style: italic;
 }
 
 .divimg3 span{
@@ -199,7 +200,8 @@ footer{
 
 .divimg4{
     padding-top: 20px;
-    background-color: #ff4655;  
+    background-color: #ff4655; 
+    font-style: italic;
 }
 
 .divimg4:hover{
@@ -244,6 +246,7 @@ footer{
     margin-left: 6%;
     margin-bottom: 15px;
     text-align: center;
+    font-style: italic;
 }
 
 #img5{

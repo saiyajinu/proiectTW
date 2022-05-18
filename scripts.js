@@ -81,7 +81,7 @@ function welcome(){
             agent = null;
         }
         if(agent == null){
-            alert('Welcome! You have not been here before!')
+            alert('Welcome! You haven\'t drawn an agent yet :(')
         }
         else{
             alert('Welcome back! Have you played ' + agent + ' yet?!')

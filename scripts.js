@@ -91,20 +91,15 @@ function welcome(){
 
 function rgbFooter(){
     const footer = document.getElementById('footer');
-    if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(255, 0, 0)')
-        footer.style.color = 'green';
-    else if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(0, 128, 0)')
-        footer.style.color = 'blue';
-    else if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(0, 0, 255)')
-        footer.style.color = 'red';
-
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    footer.style.color = 'rgb(' + r + ', ' + g + ', '+ b + ')';
     const interval = setInterval(() => {
-        if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(255, 0, 0)')
-        footer.style.color = 'green';
-    else if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(0, 128, 0)')
-        footer.style.color = 'blue';
-    else if(getComputedStyle(footer,null).getPropertyValue('color') == 'rgb(0, 0, 255)')
-        footer.style.color = 'red';
+        let r = Math.floor(Math.random() * 255);
+        let g = Math.floor(Math.random() * 255);
+        let b = Math.floor(Math.random() * 255);
+        footer.style.color = 'rgb(' + r + ', ' + g + ', '+ b + ')';
     }, 500); 
     
     setTimeout(() => {
@@ -145,19 +140,31 @@ function addEasterEgg(){
     }
 }
 
+function turnVisibility(e){
+    this.style.visibility = 'hidden';
+    
+    console.log(e.target);
+    console.log(e.currentTarget);
+
+    setTimeout(() => {
+        e.target.style.visibility = 'visible';
+    }, 2000);
+
+    e.stopPropagation();
+}
+
 function visibilityGif(){
-    const gif = document.getElementById('par1');
-    function turnVisibility(e){
-
-        e.target.style.visibility = 'hidden';
-
-        setTimeout(() => {
-            e.target.style.visibility = 'visible';
-        }, 2000);
-       
-        console.log(e.currentTarget);
-    }
+    const gif = document.getElementById('imag2');   
     gif.addEventListener('click', turnVisibility);    
+
+    const p = document.getElementById('pimg2');   
+    p.addEventListener('click', turnVisibility); 
+
+    const tit = document.getElementById('whatval');   
+    tit.addEventListener('click', turnVisibility); 
+
+    const div = document.getElementById('par1');   
+    div.addEventListener('click', turnVisibility);   
 }
 
 
